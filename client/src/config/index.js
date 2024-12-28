@@ -58,11 +58,11 @@ export const addProductFormElements = [
     name: "category",
     componentType: "select",
     options: [
-      { id: "men", label: "Men" },
-      { id: "women", label: "Women" },
-      { id: "kids", label: "Kids" },
-      { id: "accessories", label: "Accessories" },
-      { id: "footwear", label: "Footwear" },
+      { id: "tablets", label: "Tablets" },
+      { id: "powder", label: "Powder" },
+      { id: "syrups", label: "Syrups" },
+      { id: "injections", label: "Injections" },
+      { id: "other", label: "Others" },
     ],
   },
   {
@@ -70,12 +70,12 @@ export const addProductFormElements = [
     name: "brand",
     componentType: "select",
     options: [
-      { id: "nike", label: "Nike" },
-      { id: "adidas", label: "Adidas" },
-      { id: "puma", label: "Puma" },
-      { id: "levi", label: "Levi's" },
-      { id: "zara", label: "Zara" },
-      { id: "h&m", label: "H&M" },
+      { id: "drreddys", label: "Dr Reddy's" },
+      { id: "cipla", label: "Cipla" },
+      { id: "sunpharmaceutical", label: "Sun Pharmaceutical" },
+      { id: "divi", label: "Divi's" },
+      { id: "mankind", label: "Mankind" },
+      { id: "ajantapharma", label: "Ajanta Pharma" },
     ],
   },
   {
@@ -113,28 +113,28 @@ export const shoppingViewHeaderMenuItems = [
     path: "/shop/listing",
   },
   {
-    id: "men",
-    label: "Men",
+    id: "tablets",
+    label: "Tablets",
     path: "/shop/listing",
   },
   {
-    id: "women",
-    label: "Women",
+    id: "powder",
+    label: "Powder",
     path: "/shop/listing",
   },
   {
-    id: "kids",
-    label: "Kids",
+    id: "syrups",
+    label: "Syrups",
     path: "/shop/listing",
   },
   {
-    id: "footwear",
-    label: "Footwear",
+    id: "injections",
+    label: "Injections",
     path: "/shop/listing",
   },
   {
-    id: "accessories",
-    label: "Accessories",
+    id: "other",
+    label: "Others",
     path: "/shop/listing",
   },
   {
@@ -145,37 +145,37 @@ export const shoppingViewHeaderMenuItems = [
 ];
 
 export const categoryOptionsMap = {
-  men: "Men",
-  women: "Women",
-  kids: "Kids",
-  accessories: "Accessories",
-  footwear: "Footwear",
+  tablets: "Tablets",
+  powder: "Powder",
+  syrups: "Syrups",
+  injections: "Injections",
+  other: "Others",
 };
 
 export const brandOptionsMap = {
-  nike: "Nike",
-  adidas: "Adidas",
-  puma: "Puma",
-  levi: "Levi",
-  zara: "Zara",
-  "h&m": "H&M",
+  drreddys: "Dr Reddy's",
+  cipla: "Cipla",
+  sunpharmaceutical: "Sun Pharmaceutical",
+  divi: "Divi's",
+  mankind: "Mankind",
+  "ajantapharma": "Ajanta Pharma",
 };
 
 export const filterOptions = {
   category: [
-    { id: "men", label: "Men" },
-    { id: "women", label: "Women" },
-    { id: "kids", label: "Kids" },
-    { id: "accessories", label: "Accessories" },
-    { id: "footwear", label: "Footwear" },
+    { id: "tablets", label: "Tablets" },
+    { id: "powder", label: "Powder" },
+    { id: "syrups", label: "Syrups" },
+    { id: "injections", label: "Injections" },
+    { id: "other", label: "Others" },
   ],
   brand: [
-    { id: "nike", label: "Nike" },
-    { id: "adidas", label: "Adidas" },
-    { id: "puma", label: "Puma" },
-    { id: "levi", label: "Levi's" },
-    { id: "zara", label: "Zara" },
-    { id: "h&m", label: "H&M" },
+    { id: "drreddys", label: "Dr Reddy's" },
+    { id: "cipla", label: "Cipla" },
+    { id: "sunpharmaceutical", label: "Sun Pharmaceutical" },
+    { id: "divi", label: "Divi's" },
+    { id: "mankind", label: "Mankind" },
+    { id: "ajantapharma", label: "Ajanta Pharma" },
   ],
 };
 

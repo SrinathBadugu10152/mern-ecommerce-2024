@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import bannerOne from "../../assets/banner-1.webp";
-import bannerTwo from "../../assets/banner-2.webp";
-import bannerThree from "../../assets/banner-3.webp";
+// import bannerOne from "../../assets/banner-1.webp";
+// import bannerTwo from "../../assets/banner-2.webp";
+// import bannerThree from "../../assets/banner-3.webp";
 import {
   Airplay,
   BabyIcon,
@@ -16,7 +16,21 @@ import {
   UmbrellaIcon,
   WashingMachine,
   WatchIcon,
+  Pill,
+  Radiation,
+  Droplet,
+  Syringe,
+  Ellipsis,
+  Briefcase,
+  Tablet,
+  Tablets,
+  Sun,
+  PillBottle,
+  PersonStanding,
+  Hospital,
 } from "lucide-react";
+// import * as LucideIcons from "lucide-react";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -32,20 +46,20 @@ import ProductDetailsDialog from "@/components/shopping-view/product-details";
 import { getFeatureImages } from "@/store/common-slice";
 
 const categoriesWithIcon = [
-  { id: "men", label: "Men", icon: ShirtIcon },
-  { id: "women", label: "Women", icon: CloudLightning },
-  { id: "kids", label: "Kids", icon: BabyIcon },
-  { id: "accessories", label: "Accessories", icon: WatchIcon },
-  { id: "footwear", label: "Footwear", icon: UmbrellaIcon },
+  { id: "tablets", label: "Tablets", icon: Pill  }, // ShirtIcon
+  { id: "powder", label: "Powder", icon: Radiation }, // CloudLightning
+  { id: "syrups", label: "Syrups", icon: Droplet }, // BabyIcon
+  { id: "injections", label: "Injections", icon: Syringe }, // WatchIcon
+  { id: "other", label: "Others", icon: Ellipsis }, // UmbrellaIcon
 ];
 
 const brandsWithIcon = [
-  { id: "nike", label: "Nike", icon: Shirt },
-  { id: "adidas", label: "Adidas", icon: WashingMachine },
-  { id: "puma", label: "Puma", icon: ShoppingBasket },
-  { id: "levi", label: "Levi's", icon: Airplay },
-  { id: "zara", label: "Zara", icon: Images },
-  { id: "h&m", label: "H&M", icon: Heater },
+  { id: "drreddys", label: "Dr Reddy's", icon: Briefcase }, // 
+  { id: "cipla", label: "Cipla", icon: Tablets   }, // 
+  { id: "sunpharmaceutical", label: "Sun Pharmaceutical", icon: Sun }, // 
+  { id: "divi", label: "Divi's", icon: PillBottle }, // 
+  { id: "mankind", label: "Mankind", icon: PersonStanding}, // 
+  { id: "ajantapharma", label: "Ajanta Pharma", icon: Hospital}, //  
 ];
 function ShoppingHome() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -203,10 +217,10 @@ function ShoppingHome() {
         </div>
       </section>
 
-      <section className="py-12">
+      {/* <section className="py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">
-            Feature Products
+            Featured Medicines
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {productList && productList.length > 0
@@ -225,7 +239,7 @@ function ShoppingHome() {
         open={openDetailsDialog}
         setOpen={setOpenDetailsDialog}
         productDetails={productDetails}
-      />
+      /> */}
     </div>
   );
 }

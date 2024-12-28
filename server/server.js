@@ -19,8 +19,8 @@ const commonFeatureRouter = require("./routes/common/feature-routes");
 //create a separate file for this and then import/use that file here
 
 mongoose
-  .connect("db_url")
-  .then(() => console.log("MongoDB connected"))
+  .connect("mongodb+srv://sar:sar@cluster0.wqds5.mongodb.net/")
+  .then(() => console.log("MongoDB connected to SAR Medical Store Database"))
   .catch((error) => console.log(error));
 
 const app = express();
